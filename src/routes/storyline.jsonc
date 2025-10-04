@@ -1,0 +1,101 @@
+{
+	"nodes": {
+		"start": {
+			"dialog": [
+				{
+					"god-img": "none",
+					"player-img": "calm",
+					"sayer": "narrator",
+					"text": "You wake up, you see the broke life you're living in"
+				},
+				{
+					"god-img": "none",
+					"player-img": "calm",
+					"sayer": "narrator",
+					"text": "Unknown to you, you start hallucinating"
+				},
+				{
+					"god-img": "calm",
+					"player-img": "confused",
+					"sayer": "narrator",
+					"text": "You see a weird person in front of you"
+				}
+			],
+			"options": [
+				{ "text": "Who are you?", "next": "ask_who" },
+				{ "text": "What do you want with me?", "next": "ask_what" }
+			]
+		},
+
+		"ask_who": {
+			"dialog": [
+				{
+					"god-img": "calm",
+					"player-img": "confused",
+					"sayer": "god",
+					"text": "I am the one who watches over broken souls."
+				}
+			],
+			"options": [
+				{ "text": "What do you want with me?", "next": "ask_what" },
+				{ "text": "Leave me alone.", "next": "end_reject" }
+			]
+		},
+
+		"ask_what": {
+			"dialog": [
+				{
+					"god-img": "calm",
+					"player-img": "angry",
+					"sayer": "god",
+					"text": "I am here to offer you a choice."
+				}
+			],
+			"options": [
+				{ "text": "What choice?", "next": "offer_choice" },
+				{ "text": "I don't trust you.", "next": "end_reject" }
+			]
+		},
+
+		"offer_choice": {
+			"dialog": [
+				{
+					"god-img": "calm",
+					"player-img": "confused",
+					"sayer": "god",
+					"text": "A way out. A second chance."
+				}
+			],
+			"options": [
+				{ "text": "I'm listening...", "next": "accept_path" },
+				{ "text": "Not interested.", "next": "end_reject" }
+			]
+		},
+
+		"accept_path": {
+			"dialog": [
+				{
+					"god-img": "calm",
+					"player-img": "neutral",
+					"sayer": "narrator",
+					"text": "Your journey begins anew..."
+				}
+			],
+			"options": []
+		},
+
+		"end_reject": {
+			"dialog": [
+				{
+					"god-img": "none",
+					"player-img": "sad",
+					"sayer": "narrator",
+					"text": "The figure vanishes. You're left alone in your broken world."
+				}
+			],
+			"options": []
+		}
+	},
+
+	"start": "start"
+}
