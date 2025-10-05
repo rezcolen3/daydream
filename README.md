@@ -7,7 +7,7 @@ we orriginaly wanted to be like https://ncase.me/anxiety/ but ran out of time :(
 ## Credits
 
 - **speech bubbles**: [verou](https://projects.verou.me/bubbly/).
-- **story line**: [Scam Altman](https://chatgpt.com/) and Vihan (my teammate).
+- **story line**: [Scam Altman](https://chatgpt.com/) and Vihaan (my teammate).
 - **code**: my hands.
 - **original idea**: my brain.
-- **pixel drawings**: Vihan (my teammate).
+- **pixel drawings**: Vihaan (my teammate).
