@@ -4,13 +4,13 @@
 	import OptionsMain from '$lib/options/optionsMain.svelte';
 	import LandingMain from '$lib/landing/landingMain.svelte';
 
-	import { SpacePress } from '$lib/logic';
+	import { Next } from '$lib/logic';
 </script>
 
 <svelte:window
 	on:keydown={() => {
 		if (event.key === ' ' || event.keyCode === 32) {
-			SpacePress();
+			Next();
 		}
 	}}
 />

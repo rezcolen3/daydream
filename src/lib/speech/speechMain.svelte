@@ -13,17 +13,21 @@
 			return s;
 		});
 
-		speechBox.scrollTo({
-			top: speechBox.scrollHeight,
-			behavior: 'smooth'
-		});
+		setTimeout(() => {
+			//real interesting... its needed for it to work??!!
+			speechBox.scrollTo({
+				top: speechBox.scrollHeight,
+				behavior: 'smooth'
+			});
+		}, 0);
 	}
 </script>
 
 <div
 	bind:this={speechBox}
 	class="flex h-4/10 flex-col gap-4 overflow-hidden border-2 border-red-500 p-2"
->
+>	
+<span class="h-200"></span>
 	{#each $speeches as speech}
 		{#if speech.who == 'god'}
 			<God text={speech.text} />
