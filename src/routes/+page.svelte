@@ -15,7 +15,10 @@
 	}}
 />
 
-<div class="flex h-full flex-col">
+<div
+	class="flex h-full flex-col"
+	style="background-image: url('/src/lib/assets/bg.png'); background-size: cover; background-position: center;"
+>
 	{#if true == true}
 		<!-- simulating game started -->
 		<SpeechMain />

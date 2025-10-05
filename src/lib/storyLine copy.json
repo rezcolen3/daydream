@@ -1,0 +1,268 @@
+{
+	"nodes": {
+		"start": {
+			"dialog": [
+				{
+					"god-img": "none",
+					"player-img": "confused",
+					"sayer": "narrator",
+					"text": "You’re broke. One gloomy evening, wandering through a dusty antique shop, you spot a strange lamp covered in cobwebs."
+				},
+				{
+					"god-img": "none",
+					"player-img": "curious",
+					"sayer": "narrator",
+					"text": "You rub it, half-joking, half-hoping for a genie. Instead, a shadowy figure shimmers into existence."
+				},
+				{
+					"god-img": "shadow",
+					"player-img": "shocked",
+					"sayer": "shadow",
+					"text": "Hi. I see you’re not in the best situation :/ I want to help, but... sacrifices must be made."
+				}
+			],
+			"options": [
+				{ "text": "Huh, what?", "next": "ask_sacrifice" },
+				{ "text": "Anything to get out of this!", "next": "offer_gifts" },
+				{ "text": "Who are you?", "next": "ask_identity" }
+			]
+		},
+
+		"ask_sacrifice": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "curious",
+					"sayer": "shadow",
+					"text": "Sacrifices. Everything worth having comes at a price. You want a way out of your troubles? I can grant that—but first, you must give me something in return: your time, memories, something precious. You decide."
+				}
+			],
+			"options": [
+				{ "text": "What kind of sacrifice?", "next": "choose_sacrifice" },
+				{ "text": "Can’t you just give me a wish without strings?", "next": "refuse_terms" },
+				{ "text": "I’m not interested if it’s a trick.", "next": "end_reject" }
+			]
+		},
+
+		"choose_sacrifice": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "thinking",
+					"sayer": "shadow",
+					"text": "Sacrifice comes in many forms. For some, it’s time stolen from their future. Others trade memories best left forgotten. Some pay with luck. What do you value least?"
+				}
+			],
+			"options": [
+				{ "text": "Time", "next": "gain_hourglass" },
+				{ "text": "Memories", "next": "gain_locket" },
+				{ "text": "Luck", "next": "gain_scales" }
+			]
+		},
+
+		"refuse_terms": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "angry",
+					"sayer": "shadow",
+					"text": "If only life worked that way. Every gift has a cost—sometimes you just don’t see it right away. Will you accept the terms or walk away empty?"
+				}
+			],
+			"options": [
+				{ "text": "I accept.", "next": "offer_gifts" },
+				{ "text": "I walk away.", "next": "end_reject" }
+			]
+		},
+
+		"offer_gifts": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "curious",
+					"sayer": "shadow",
+					"text": "I can grant you one of three gifts—choose wisely, because the price is steep."
+				},
+				{
+					"god-img": "shadow",
+					"player-img": "none",
+					"sayer": "shadow",
+					"text": "A glowing hourglass (time), a silver locket (memories), a pair of scales (luck)"
+				}
+			],
+			"options": [
+				{ "text": "The hourglass", "next": "gain_hourglass" },
+				{ "text": "The locket", "next": "gain_locket" },
+				{ "text": "The scales", "next": "gain_scales" }
+			]
+		},
+
+		"gain_hourglass": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "thinking",
+					"sayer": "shadow",
+					"text": "You will gain extra time every day—but for every second gained, a memory will fade into oblivion."
+				}
+			],
+			"options": [{ "text": "Accept the price", "next": "final_act" }]
+		},
+
+		"gain_locket": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "sad",
+					"sayer": "shadow",
+					"text": "You will forget your deepest pain or regret—but each pain forgotten erases a moment of joy."
+				}
+			],
+			"options": [{ "text": "Accept the price", "next": "final_act" }]
+		},
+
+		"gain_scales": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "excited",
+					"sayer": "shadow",
+					"text": "You will become unbelievably lucky—but every time fortune smiles, someone you care about suffers."
+				}
+			],
+			"options": [{ "text": "Accept the price", "next": "final_act" }]
+		},
+
+		"ask_identity": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "neutral",
+					"sayer": "shadow",
+					"text": "A collector of debts, a broker of fates, a shadow who balances desire and consequence. You may call me... The Sacrificer."
+				}
+			],
+			"options": [
+				{ "text": "Why me?", "next": "why_me" },
+				{ "text": "What do you want from me?", "next": "ask_sacrifice" },
+				{ "text": "Can I refuse?", "next": "can_refuse" }
+			]
+		},
+
+		"why_me": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "confused",
+					"sayer": "shadow",
+					"text": "Because your desperation tipped the scales. Everyone has a price; I’m just here to collect."
+				}
+			],
+			"options": [
+				{ "text": "What do you want from me?", "next": "ask_sacrifice" },
+				{ "text": "Can I refuse?", "next": "can_refuse" }
+			]
+		},
+
+		"can_refuse": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "thinking",
+					"sayer": "shadow",
+					"text": "You can walk away, but you’ll stay stuck. Sometimes that’s the hardest sacrifice of all."
+				}
+			],
+			"options": [
+				{ "text": "Accept the price", "next": "offer_gifts" },
+				{ "text": "Walk away", "next": "end_reject" }
+			]
+		},
+
+		"final_act": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "neutral",
+					"sayer": "shadow",
+					"text": "After weeks with your gift, the weight of your sacrifice grows heavier. One night, The Sacrificer appears again."
+				},
+				{
+					"god-img": "shadow",
+					"player-img": "neutral",
+					"sayer": "shadow",
+					"text": "So… how’s your new life? The gift came at a price, didn’t it?"
+				}
+			],
+			"options": [
+				{ "text": "I want to undo it all!", "next": "undo_all" },
+				{ "text": "I accept what I’ve lost.", "next": "accept_loss" },
+				{ "text": "Is there another choice?", "next": "another_choice" }
+			]
+		},
+
+		"undo_all": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "anxious",
+					"sayer": "shadow",
+					"text": "To reclaim what you lost means losing what you gained. Are you ready to pay that price?"
+				}
+			],
+			"options": [
+				{ "text": "Yes, I’m ready.", "next": "reversal" },
+				{ "text": "No, I need more time.", "next": "final_act" }
+			]
+		},
+
+		"reversal": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "relieved",
+					"sayer": "shadow",
+					"text": "The trades reverse. You return to your old life—bittersweet but peaceful. Sometimes, the greatest gift is accepting your own path. Farewell."
+				}
+			],
+			"options": []
+		},
+
+		"accept_loss": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "content",
+					"sayer": "shadow",
+					"text": "Wise. Acceptance itself is a sacrifice and a gift. The shadow smiles and dissolves. You move forward, changed but stronger."
+				}
+			],
+			"options": []
+		},
+
+		"another_choice": {
+			"dialog": [
+				{
+					"god-img": "shadow",
+					"player-img": "neutral",
+					"sayer": "shadow",
+					"text": "There’s always another choice. But every choice is a sacrifice. Sometimes sacrifice isn’t about losing—it’s about choosing what’s truly worth keeping."
+				}
+			],
+			"options": []
+		},
+
+		"end_reject": {
+			"dialog": [
+				{
+					"god-img": "none",
+					"player-img": "sad",
+					"sayer": "narrator",
+					"text": "The figure vanishes. You’re left alone in your broken world."
+				}
+			],
+			"options": []
+		}
+	},
+	"start": "start"
+}

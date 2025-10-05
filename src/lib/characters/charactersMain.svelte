@@ -12,10 +12,10 @@
 </script>
 
 <div class="flex h-4/10">
-	<div class="flex h-full w-1/2 justify-center">
-		<!-- {godImg} --> <img src={God} />
+	<div class="flex h-full w-1/2 items-center justify-center">
+		<!-- {godImg} --> <img src={God} class="image-rendering-pixelated block" />
 	</div>
-	<div class="flex h-full w-1/2 justify-center">
-		<!-- {playerImg} --> <img src={Player} />
+	<div class="flex h-full w-1/2">
+		<!-- {playerImg} --> <img src={Player} class="image-rendering-pixelated block" />
 	</div>
 </div>
