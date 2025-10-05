@@ -22,9 +22,9 @@
 		class:skip-animation={animationDone}
 	>
 		{#each words as word, i}
-			<span class="fade-word" style="animation-delay: {i * 0.1}s" class:visible={animationDone}
-				>{word}&nbsp;</span
-			>
+			<span class="fade-word" style="animation-delay: {i * 0.1}s" class:visible={animationDone}>
+				{word}&nbsp;
+			</span>
 		{/each}
 	</div>
 </div>

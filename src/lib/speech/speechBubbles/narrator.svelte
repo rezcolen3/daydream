@@ -16,13 +16,13 @@
 	}}
 />
 
-<div class="flex justify-end">
-	<div class="speech-bubble animate-slide-in mr-3 w-fit max-w-8/10 p-3 font-['Space_Grotesk']">
-		{#each words as word, i}
+<div class="flex justify-center">
+	<div class="animate-slide-in w-fit border-2 border-black px-2 py-1 font-['Jersey_10']">
+		[&nbsp;{#each words as word, i}
 			<span class="fade-word" style="animation-delay: {i * 0.1}s" class:visible={animationDone}>
 				{word}&nbsp;
 			</span>
-		{/each}
+		{/each}]
 	</div>
 </div>
 
@@ -42,9 +42,8 @@
 		animation: fade-in 0s forwards;
 	}
 
-	.skip-animation {
-		animation: none !important;
-		transform: none !important;
+	.visible {
 		opacity: 1 !important;
+		animation: none !important;
 	}
 </style>
