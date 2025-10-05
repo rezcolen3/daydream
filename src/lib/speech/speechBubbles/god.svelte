@@ -54,7 +54,7 @@
 
 	@keyframes slide-in {
 		from {
-			transform: translateX(-30px);
+			transform: translateX(30px);
 			opacity: 0;
 		}
 		to {
