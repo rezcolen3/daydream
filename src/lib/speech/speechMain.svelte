@@ -23,18 +23,15 @@
 	}
 </script>
 
-<div
-	bind:this={speechBox}
-	class="flex h-4/10 flex-col gap-4 overflow-hidden border-2 border-red-500 p-2"
->
+<div bind:this={speechBox} class="flex h-4/10 flex-col gap-4 overflow-hidden p-2">
 	<span class="h-200"></span>
 	{#each $speeches as speech}
-		{#if speech.sayer == 'god'}
-			<God text={speech.text} />
+		{#if speech.sayer == 'narrator'}
+			<Narrator text={speech.text} />
 		{:else if speech.sayer == 'player'}
 			<Player text={speech.text} />
-		{:else if speech.sayer == 'narrator'}
-			<Narrator text={speech.text} />
+		{:else}
+			<God text={speech.text} />
 		{/if}
 	{/each}
 </div>

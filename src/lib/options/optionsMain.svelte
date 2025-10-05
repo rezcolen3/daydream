@@ -19,9 +19,7 @@
 	}
 </script>
 
-<div
-	class="flex h-2/10 flex-col justify-center gap-1 border-2 border-red-500 p-2 font-['Space_Grotesk']"
->
+<div class="flex h-2/10 flex-col justify-center gap-1 p-2 font-['Space_Grotesk']">
 	{#each options as option, i}
 		<button
 			onclick={() => resolveChoice?.(i)}

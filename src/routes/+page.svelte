@@ -15,7 +15,7 @@
 	}}
 />
 
-<div class="flex h-full flex-col border-2 border-red-500">
+<div class="flex h-full flex-col">
 	{#if true == true}
 		<!-- simulating game started -->
 		<SpeechMain />
