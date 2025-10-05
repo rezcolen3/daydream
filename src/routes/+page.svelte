@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex h-full flex-col border-2 border-red-500">
-	{#if true == false}
+	{#if true == true}
 		<!-- simulating game started -->
 		<SpeachMain />
 		<CharactersMain />

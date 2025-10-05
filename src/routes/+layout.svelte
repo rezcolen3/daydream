@@ -10,5 +10,5 @@
 </svelte:head>
 
 <div class="flex h-screen justify-center bg-black">
-	<div class="h-full aspect-1/1 bg-white">{@render children?.()}</div>
+	<div class="h-full aspect-5/8 bg-white">{@render children?.()}</div>
 </div>
