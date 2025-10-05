@@ -1,6 +1,6 @@
 <script module>
 	import God from './speechBubbles/god.svelte';
-	import Narator from './speechBubbles/narator.svelte';
+	import Narrator from './speechBubbles/narrator.svelte';
 	import Player from './speechBubbles/player.svelte';
 
 	import { speeches } from '$lib/store';
@@ -29,8 +29,8 @@
 			<God text={speech.text} />
 		{:else if speech.who == 'player'}
 			<Player text={speech.text} />
-		{:else if speech.who == 'narator'}
-			<Narator text={speech.text} />
+		{:else if speech.who == 'narrator'}
+			<Narrator text={speech.text} />
 		{/if}
 	{/each}
 </div>

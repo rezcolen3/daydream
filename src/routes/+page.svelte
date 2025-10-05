@@ -1,5 +1,5 @@
 <script>
-	import speechMain from '$lib/speech/speechMain.svelte';
+	import SpeechMain from '$lib/speech/speechMain.svelte';
 	import CharactersMain from '$lib/characters/charactersMain.svelte';
 	import OptionsMain from '$lib/options/optionsMain.svelte';
 	import LandingMain from '$lib/landing/landingMain.svelte';
@@ -18,7 +18,7 @@
 <div class="flex h-full flex-col border-2 border-red-500">
 	{#if true == true}
 		<!-- simulating game started -->
-		<speechMain />
+		<SpeechMain />
 		<CharactersMain />
 		<OptionsMain />
 	{:else}
